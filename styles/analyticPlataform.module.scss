@@ -1,0 +1,175 @@
+@use 'variaveis';
+@import 'mixin';
+
+
+.section{
+    width: 100%;
+    height: 100%;
+    display: flex;
+
+  //Analytics
+
+    .div1{
+       @include theme;
+       width: 12%;
+
+       .ul{
+        text-align: variaveis.$textaligncenter;
+        
+    }
+
+    .li{
+       @include list;
+    }
+
+    .lii{
+        @include list;
+        margin-top: 300px;
+     }
+
+    
+    .h1{
+        text-align: variaveis.$textaligncenter;
+        margin-top: 50px;
+    }
+
+    }
+
+    //Hello Chef
+    .div2{
+        @include theme($theme: variaveis.$colordiv2);
+        width: 62%;
+
+        
+        .listaPercentage{
+            font-size: 35px;
+            margin-top: 5px;
+        }
+
+        .article1{
+           @include article;
+           margin-top: 26px;
+
+        
+          .containerImage{
+              margin-left: 13px;
+              padding-top: 24px;
+            
+          }
+            .search{
+                @include search;
+                margin-left: 485px;
+       
+            }
+            .search::placeholder{
+                color: white;
+            }
+
+            .h1hello{
+                font-size: 24px;
+            }
+
+            .containerIcon{
+                width: 5%;
+                height: 55px;
+                border-radius: 20px;
+                margin-left: 20px;
+                background-color: variaveis.$backgroundItems;
+                
+                .icon{
+                    @include icon;
+                    text-align: center;
+                   
+                }
+            }
+        }
+
+        .article2{
+            @include article;
+            justify-content: space-between;
+            padding-right: 5px;
+
+            ul{
+                width:23%;
+                height: 130px;
+                border: none;
+                border-radius: 10px;
+                padding-top: 20px;
+                background: 
+                linear-gradient(127deg, variaveis.$backgroundItems, rgba(0,255,0,0) 70.71%),
+                linear-gradient(700deg, #f1a025, rgba(0,0,255,0) 35%),
+                linear-gradient(336deg, #9698D7, rgba(0, 0, 255, 0) 65%),
+                linear-gradient(700deg, #e06395, rgba(0, 0, 0, 255) 75%),
+            
+            }
+
+            .linePercentage{
+                width: 60px;
+                height: 5px;
+                margin-top: 10px;
+                background-color: orange;
+            }
+           
+               
+            li{
+                list-style: none;
+            }
+        }
+
+         .article3{
+            @include article;
+        }  
+         
+        
+    }
+
+    .div3{
+        @include theme;
+        width: 26%;
+
+        .textDark{
+            color: #696b79;
+            font-weight: bold;
+    
+        }
+        .textWhite{
+            color: white;
+        }
+    .ul1{
+       @include uldiv3;
+
+    }
+
+    .ul2{
+       @include uldiv3;
+       height: 200px;
+       
+    }
+    .ul3{
+       @include uldiv3;
+       height: 440px;
+    }
+
+    .btn{
+        width: 330px;
+        height: 60px;
+        border-radius: 5px;
+        background-color: #9CECA5;
+        font-size: 16px;
+    }
+
+    .h1Activity{
+        margin-left: 24px;
+        margin-top: 40px;
+    }
+    }
+
+   
+
+}
+
+//Grafico
+.chart{
+    width: 50.5%;
+    //height: 10px;
+}
